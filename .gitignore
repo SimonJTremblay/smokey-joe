@@ -1,0 +1,95 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@SimonJTremblay 
+20.4k
+299
+15.1k833cypress-io/cypress
+ Code Issues 1,007 Pull requests 100 Actions Security Insights
+cypress/.gitignore
+@chrisbreiding chrisbreiding Electron v5.0.10 (#4720)
+6ba8d7c 21 days ago
+@brian-mann@bahmutov@chrisbreiding@Bkucera@flotwig@jennifer-shehane
+65 lines (55 sloc)  1.08 KB
+  
+.DS_Store
+bower_components
+node_modules
+*.log
+*.log.*
+*.orig
+dist
+dist-*
+build
+.history
+.publish
+_test-output
+cypress.zip
+tmp/
+.nyc_output
+
+# from extension
+Cached Theme.pak
+Cached Theme Material Design.pak
+
+# from https-proxy project
+packages/https-proxy/ca/
+
+# from desktop-gui
+packages/desktop-gui/cypress/videos
+packages/desktop-gui/src/jsconfig.json
+
+# from driver
+packages/driver/test/cypress/videos
+
+# from example
+packages/example/app
+packages/example/build
+packages/example/cypress
+
+# from server
+packages/server/.cy
+packages/server/.projects
+packages/server/support
+packages/server/test/support/fixtures/server/imgs
+packages/server/test/support/fixtures/server/libs
+
+# CLI tool
+cli/types/blob-util
+cli/types/bluebird
+cli/types/chai
+cli/types/chai-jquery
+cli/types/jquery
+cli/types/lodash
+cli/types/mocha
+cli/types/minimatch
+cli/types/sinon
+cli/types/sinon-chai
+# ignore CLI output build folder
+cli/build
+
+# Building app binary
+scripts/support
+package-lock.json
+yarn.lock
+binary-url.json
+
+# Allows us to dynamically create eslint rules that override the default for Decaffeinate scripts
+.eslintrc.js
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
