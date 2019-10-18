@@ -42,3 +42,8 @@ Cypress.Commands.add('login', () => {
     // cy.getCookie('connect-development.sid');
 })
 
+Cypress.Commands.add('getUsers', () => {
+    cy.fixture('incorrectUser.json').as('incorrectUser')
+    cy.fixture('correctUser.json').as('correctUser')
+})
+

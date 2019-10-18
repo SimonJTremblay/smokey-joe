@@ -5,9 +5,11 @@
 //Enables intellisense with Cypress
 /// <reference types="Cypress" />
 
+// const { fakeEmail, fakePassword } = {fakeEmail:"test@email.com",fakePassword:"Password"}
+//   const { email, password } = {email:"sjomp103@gmail.com",password:"newPassword1"}
+
 describe('/login', function(){
-  const { fakeEmail, fakePassword } = {fakeEmail:"test@email.com",fakePassword:"Password"}
-  const { email, password } = {email:"sjomp103@gmail.com",password:"newPassword1"}
+ 
   this.beforeEach(() => {
     cy.visit('/#/login')
   })
@@ -29,40 +31,47 @@ describe('/login', function(){
   })
 
   it('Log in button disable when email, but no password', () => {
-    cy.get('input[name=email]')
-      .type(fakeEmail)
-      .should('have.value',fakeEmail)
-    cy
-      .contains('Log in')
-      .should('have.attr', 'disabled')
+    cy.getUsers()
+    cy.get('@incorrectUser')
+      .then((incorrectUser) => {
+        cy.get('input[name=email]')
+        .type(incorrectUser.email)
+        .should('have.value',incorrectUser.email)
+        cy
+          .contains('Log in')
+          .should('have.attr', 'disabled')
+    })
   })
 
   it('Error wrong email or password', () => {
-    cy.get('input[name=email]')
-      .type(fakeEmail)
-      .should('have.value',fakeEmail)
-    cy.get('input[name=password]')
-      .type(`${fakePassword}{enter}`)
-    cy.get('.Toastify__toast-container')
-      .should('contain','Error')
-      .should('contain','Wrong email or password.')
+    cy.getUsers()
+    cy.get('@incorrectUser')
+      .then((incorrectUser) => {
+        cy.get('input[name=email]')
+          .type(incorrectUser.email)
+          .should('have.value',incorrectUser.email)
+        cy.get('input[name=password]')
+          .type(`${incorrectUser.password}{enter}`)
+        cy.get('.Toastify__toast-container')
+          .should('contain','Error')
+          .should('contain','Wrong email or password.')
+      })
   })
 
   it('Correct authentication', () => {
-    cy.get('input[name=email]')
-      .type(email)
-      .should('have.value',email)
 
-    // {enter} causes the form to submit
-    cy.get('input[name=password]')
-      .type(`${password}{enter}`)
-    cy.url().should('not.contain', '/auth.login')   // SJT -- Not sure what should be the landing page 
+    cy.getUsers()
+    cy.get('@correctUser')
+      .then((correctUser) => {
+        cy.get('input[name=email]')
+          .type(correctUser.email)
+          .should('have.value',correctUser.email)
+
+        // {enter} causes the form to submit
+        cy.get('input[name=password]')
+          .type(`${correctUser.password}{enter}`)
+        cy.url().should('not.contain', '/auth.login')   // SJT -- Not sure what should be the landing page 
+    })
   })
- })
-
-// Stub Request
-// static user
-    // seed the DB ?
-// dynamic user
-  //db setup/teardown
-
+  
+})

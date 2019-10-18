@@ -16,8 +16,8 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-Cypress.Cookies.defaults({
-    whitelist: 'connect-development.sid'
-})
+// Cypress.Cookies.defaults({
+//     whitelist: 'connect-development.sid'
+// })
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
