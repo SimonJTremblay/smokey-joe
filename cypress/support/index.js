@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+/// <reference types="Cypress" />
 
 // Cypress.Cookies.defaults({
 //     whitelist: 'connect-development.sid'
