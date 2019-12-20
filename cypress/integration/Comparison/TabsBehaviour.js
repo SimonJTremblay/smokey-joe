@@ -1,5 +1,3 @@
-
-
 // - Si il y a un point dans l'onglet (dirty state), il devrait y avoir un modal qui apparait pour confirmer le delete (discard changes)
 // . 	On cancel, ferme le modal et le comparison est toujours ouvert
 // .	On delete, ferme le modal et le comparion disparait
@@ -63,7 +61,7 @@ describe('comparison page tabs behaviour', function() {
     //     .	l'onglet de la comparison se ferme et ouvre celui de droite
     //     .	le container doit passer a celui droite
     //     .	si ce sont les dernier a droite, passe a gauche
-    it.only('When \'x\' is clicked, tab closes and focus is on the right', () => {
+    it('When \'x\' is clicked, tab closes and focus is on the right', () => {
         //need to force state of at least two tabs open
         
 
