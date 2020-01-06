@@ -1,10 +1,12 @@
 /// <reference types="Cypress" />
 
-// les funds carry over et on checkbox apparait pour chaque, checked by default
-// les actions buttons en haut change pour cancel et continue (n/4)
-// on cancel, les boutons reviennent a ceux d'avant, et les checkbox disparaissent
-// on continue, ca passe a la prochaine page (proposal content).. le nom de la comparaison carry et les funds
-describe('Create a Proposal from scratch', function() {
+// if it was created for a contact, contact info should display "prepared for..."
+// Verify that all intended funds were carried over from comparison page
+// Verify that comparison name was carried over from comparison page
+// Not possible to change comparison name ??
+// Should have two tabs: customize and options
+
+describe('Create a Proposal on Proposal Page', function() {
 
     const   f1 = 'FID697',
             f2 = 'DJT04060',
@@ -17,49 +19,47 @@ describe('Create a Proposal from scratch', function() {
 
     // TODO find a way to stub a comparison
 
-    it(`On new comparison, 'Create Proposal' button should be disabled`, () => {
-        cy.get('.comparison-actions').find('.action').should('be.disabled')
-    })
+    it(`On landing page, top part should display user information and firm name`, () => {
+        // Create the proposal
+        cy.addFunds(f1,f2,f3)
+        cy.get('.comparison-actions').find('.action').click()       // Click on 'Create a proposal'
+        cy.get('button.action').click()     // Click on Continue
 
-    it(`On addedd fund, 'Create Proposal' button should become clickable`, () => {
-        cy.addFunds(f1,f2);
-
-        cy.get('.comparison-actions').find('.action').should('not.be.disabled')
-    })
-
-    it(`On 'Create Proposal' click, funds are carried over and a checkbox appears for each`, () => {
-        cy.addFunds(f1,f2);
-
-        cy.get('.comparison-actions').find('.action').click()
-        
-        // same funds are there and they have checkboxes
-        // TODO fin a better way to assess if it's checked or not
-        cy.get('.comparison-card').each( ($el, index, $list) => {
-            cy.wrap($el).find('.comparison-card-header').find('.icon-checkmark')    // look for checkmarks
-
-            const name = $el.find('.comparison-card-symbols').text()
-
-            // Asserting the same funds are present by the code.
-            if(index === 0){
-                expect(name).to.equal(f1)
-            }
-            if(index === 1){
-                expect(name).to.equal(f2)
-            }
+        // Check for correct user information
+        cy.getUsers()
+        cy.get('@correctUser')
+        .then((correctUser) => {
+            cy.get('.advisor-name').should('contain.text', correctUser.firstName).and('contain.text', correctUser.lastName)
+            cy.get('.company').should('contain.text', correctUser.firmName)
+            cy.get('.advisor-email').should('contain.text', correctUser.email)
+            cy.get('.advisor-phone').should('contain.text',correctUser.phoneNumber)
+            cy.get('.address-1').should('contain.html','&nbsp') // if not provided in user profile
+            cy.get('.address-2').should('contain.html','&nbsp')
+            cy.get('.province').should('contain.text', correctUser.city).and('contain.text', correctUser.province)
+            cy.get('.country').should('contain.text',correctUser.country)
         })
     })
 
-    it.only(`During proposal creation, adding a new comparion is not included in proposal by default`,  () => {
-        cy.addFunds(f1,f2);
+    it(`'Download' button should be visible and clickable in the top right of the page`, () => {
+        // Create the proposal
+        cy.addFunds(f1,f2,f3)
+        cy.get('.comparison-actions').find('.action').click()       // Click on 'Create a proposal'
+        cy.get('button.action').click()     // Click on Continue
 
-        cy.get('.comparison-actions').find('.action').click()
+        cy.get('.download-button').should('be.enabled')
 
-        cy.addFunds(f3, null);
+        // TODO assert a modal is brought foreground after clicking the download button
     })
 
-    it(`On 'Continue' click...`,  () => {
+    it.only(`if it was created for a contact, contact info should display "prepared for..."`, ()=> {
 
     })
+
+    it.only(`Comparison name should have gotten carried over from comparison page and is unchangeable from this page`, ()=> {
+
+    })
+
+    
 })  // Describe
 
 Cypress.Commands.add('addFunds', (f1, f2) => {
@@ -79,4 +79,3 @@ Cypress.Commands.add('addFunds', (f1, f2) => {
         .click()
     }
 })
-

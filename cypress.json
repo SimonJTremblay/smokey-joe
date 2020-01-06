@@ -1,6 +1,10 @@
 {
 	"baseUrl": "http://localhost:3000",
 	"env": {
-		"comparison": "http://localhost:3000/comparison"
-	}
+		"comparison": "http://localhost:3000/comparison",
+		"proposal": "http://localhost:3000/proposal"
+	},
+
+	"viewportWidth": 1500,
+  	"viewportHeight": 1200
 }
