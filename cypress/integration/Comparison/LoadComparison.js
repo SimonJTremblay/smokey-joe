@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 
-describe('Able to load a comparison from Templates and Contact tabs', function() {
+describe(`Able to load a comparison from Templates and Contact tabs`, function() {
     const comparisonToGet = 'test_2_comparison_cards'
     const comparisonFromContact = 'john_test_contact_comparison'
     // select John Test as contact
@@ -11,7 +11,7 @@ describe('Able to load a comparison from Templates and Contact tabs', function()
         cy.login()
     })
 
-    it('load comparison from templates tab', () => {
+    it(`load comparison from templates tab`, () => {
         cy.visit('/templates/comparisons')
 
         cy.get('.rt-tbody').find('.rt-tr-group').eq(0).should('contain', comparisonToGet).find('.action-link').click()
@@ -22,7 +22,7 @@ describe('Able to load a comparison from Templates and Contact tabs', function()
         //cy.get('.rt-tbody').find('.rt-tr-group').eq(0).contains('Load Template')
     })
 
-    it('load comparison from contacts tab', () => {
+    it(`load comparison from contacts tab`, () => {
         cy.visit('/contacts')
 
         //TODO Change cypress selectors to more comprehensive attribute names
