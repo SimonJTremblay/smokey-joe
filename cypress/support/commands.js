@@ -12,7 +12,7 @@ Cypress.Commands.add('login', () => {
 
         const name = "connect-development.sid";
         //const value = "s%3AtS3qQy9fKSmUihExVq_xa1RChdoxVXD2.IuLg2Mwfld1HVzDuW1JDdKkyTkSmtcDOp4DORTUlVkI";
-        const value = "s%3AYwTSqWUMT0zSvBQRMVah7OJU7XTlWT7u.8LZzFGS0g6w%2F6Jx%2FM1PewyqEYiUCLc3i%2FJxBzLGHNMg";
+        const value = "s%3AMastBwaIWgGx11X0WM3O8NEA-kXXkPNZ.5Tpp0WzoZZgrNjSHEdj7IEKt5ESPCXdOOV8t6kfrecQ";
         const options = {
             domain: "localhost",
             //expiry: Date.parse("2020-10-18T18:38:51.784Z"),

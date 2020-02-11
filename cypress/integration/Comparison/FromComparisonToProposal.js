@@ -62,7 +62,7 @@ describe('From Comparison to Proposal page', function() {
         cy.get('.comparison-card-header').find('.input-checkbox').each(($el, index, $list) => {
             
             if(index !== $list.length - 1){
-                cy.wrap($el).should('have.class', 'selected')   //selected means  they are checked
+                cy.wrap($el).should('have.class', 'selected')   //selected means they are checked
             }
             else {  // last item of the array, therefore the one recently added 
                 cy.wrap($el).should('not.have.class', 'selected')
