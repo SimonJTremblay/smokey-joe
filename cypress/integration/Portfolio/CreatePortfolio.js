@@ -4,46 +4,22 @@ describe('create portfolio', function() {
 
     this.beforeEach(() => {
         cy.login()
-        cy.visit('/templates/portfolio')
+        cy.visit('/templates/portfolios')
     })
 
     it(` Templates/Portfolio contains Create Portfolio button, 'My Model Portfolios' title and a search bar`, () => {
+        cy.get('button').should('contain.text', 'Create Portfolio').and('be.enabled')
 
+        cy.get('.section-title').should('contain.text', 'My Model Portfolios')
+
+        cy.get('[data-cy=quick-search-comparison-tab-search-input]').invoke('attr', 'placeholder').should('contain', 'Filter my models')
     })
 
     it(` Clicking on 'Create Portfolio' opens an empty portfolio modal`, () => {
-        
-    })
+        cy.get('.modal-content').should('not.exist')
 
-    it(` Empty portfolio modal contains enabled 'cancel' button and disabled 'save as..' button`, () => {
-        
-    })
+        cy.get('button').contains('Create Portfolio').click()
 
-    it(` Changing size value`, () => {
-        
-    })
-
-    it(` Adding funds to portfolio`, () => {
-        
-    })
-
-    it(` Removing funds to portfolio`, () => {
-        
-    })
-
-    it(` 'save as..' button only becomes enabled after I enter a Size value, at least one fund and cumulated weight equals 100%`, () => {
-        
-    })
-
-    it(` Clicking on 'allocate remaining' should bring total weight at 100%` , () => {
-        
-    })
-
-    it(` Cancel button action` , () => {
-        
-    })
-
-    it(` Save as button action` , () => {
-        
+        cy.get('.modal-content').should('exist')
     })
 })
