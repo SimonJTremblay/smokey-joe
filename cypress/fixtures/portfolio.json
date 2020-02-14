@@ -1,0 +1,925 @@
+{
+    "portfolios": [
+        {
+            "allocations": {
+                "asset": [
+                    {
+                        "_id": "5e42c26dad67003984c920bb",
+                        "name": "Canadian Fixed Income",
+                        "weight": 90.14
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ba",
+                        "name": "Cash & Equivalents",
+                        "weight": 6.45
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920b9",
+                        "name": "Foreign Fixed Income",
+                        "weight": 2.81
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920b8",
+                        "name": "United States Fixed Income",
+                        "weight": 1.52
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920b7",
+                        "name": "Canadian Equity",
+                        "weight": 0.56
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920b6",
+                        "name": "Foreign Equity",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920b5",
+                        "name": "Other",
+                        "weight": -1.49
+                    }
+                ],
+                "sector": [
+                    {
+                        "_id": "5e42c26dad67003984c920bc",
+                        "name": "Unknown",
+                        "weight": 0
+                    }
+                ],
+                "country": [
+                    {
+                        "_id": "5e42c26dad67003984c92112",
+                        "name": "Canada",
+                        "weight": 91.69
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92111",
+                        "name": "Unidentified",
+                        "weight": 3.94
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92110",
+                        "name": "United States",
+                        "weight": 1.52
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c9210f",
+                        "name": "United Kingdom",
+                        "weight": 0.18
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c9210e",
+                        "name": "Netherlands",
+                        "weight": 0.15
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c9210d",
+                        "name": "Indonesia",
+                        "weight": 0.13
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c9210c",
+                        "name": "Turkey",
+                        "weight": 0.13
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c9210b",
+                        "name": "Mexico",
+                        "weight": 0.13
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c9210a",
+                        "name": "China",
+                        "weight": 0.11
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92109",
+                        "name": "British Virgin Islands",
+                        "weight": 0.1
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92108",
+                        "name": "Cayman Islands",
+                        "weight": 0.1
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92107",
+                        "name": "Luxembourg",
+                        "weight": 0.1
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92106",
+                        "name": "Colombia",
+                        "weight": 0.1
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92105",
+                        "name": "Peru",
+                        "weight": 0.1
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92104",
+                        "name": "South Africa",
+                        "weight": 0.09
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92103",
+                        "name": "Brazil",
+                        "weight": 0.08
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92102",
+                        "name": "Kazakhstan",
+                        "weight": 0.08
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92101",
+                        "name": "Russian Federation",
+                        "weight": 0.07
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92100",
+                        "name": "Panama",
+                        "weight": 0.07
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ff",
+                        "name": "Uruguay",
+                        "weight": 0.06
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920fe",
+                        "name": "United Arab Emirates",
+                        "weight": 0.06
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920fd",
+                        "name": "India",
+                        "weight": 0.05
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920fc",
+                        "name": "Qatar",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920fb",
+                        "name": "Paraguay",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920fa",
+                        "name": "Croatia",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f9",
+                        "name": "Morocco",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f8",
+                        "name": "Hungary",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f7",
+                        "name": "Azerbaijan",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f6",
+                        "name": "Dominican Republic",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f5",
+                        "name": "Romania",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f4",
+                        "name": "Philippines",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f3",
+                        "name": "Malaysia",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f2",
+                        "name": "Chile",
+                        "weight": 0.04
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f1",
+                        "name": "Serbia",
+                        "weight": 0.03
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920f0",
+                        "name": "Saudi Arabia",
+                        "weight": 0.03
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ef",
+                        "name": "Argentina",
+                        "weight": 0.03
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ee",
+                        "name": "Hong Kong",
+                        "weight": 0.03
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ed",
+                        "name": "Austria",
+                        "weight": 0.03
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ec",
+                        "name": "Vietnam",
+                        "weight": 0.03
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920eb",
+                        "name": "Israel",
+                        "weight": 0.03
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ea",
+                        "name": "Oman",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e9",
+                        "name": "Costa Rica",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e8",
+                        "name": "Guatemala",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e7",
+                        "name": "Poland",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e6",
+                        "name": "Macau",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e5",
+                        "name": "Nigeria",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e4",
+                        "name": "Ireland",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e3",
+                        "name": "Mauritius",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e2",
+                        "name": "Bahamas",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e1",
+                        "name": "Georgia",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920e0",
+                        "name": "Jordan",
+                        "weight": 0.02
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920df",
+                        "name": "Bermuda",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920de",
+                        "name": "Jersey",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920dd",
+                        "name": "Australia",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920dc",
+                        "name": "Honduras",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920db",
+                        "name": "Mongolia",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920da",
+                        "name": "Thailand",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d9",
+                        "name": "Burundi",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d8",
+                        "name": "Singapore",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d7",
+                        "name": "Kuwait",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d6",
+                        "name": "Isle of Man",
+                        "weight": 0.01
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d5",
+                        "name": "Bolivia",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d4",
+                        "name": "Ukraine",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d3",
+                        "name": "Belarus",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d2",
+                        "name": "Senegal",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d1",
+                        "name": "Egypt",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920d0",
+                        "name": "Ecuador",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920cf",
+                        "name": "Sri Lanka",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ce",
+                        "name": "Lebanon",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920cd",
+                        "name": "Ghana",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920cc",
+                        "name": "Venezuela",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920cb",
+                        "name": "Jamaica",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920ca",
+                        "name": "Pakistan",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c9",
+                        "name": "Kenya",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c8",
+                        "name": "Cote D'Ivoire",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c7",
+                        "name": "Iraq",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c6",
+                        "name": "Bahrain",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c5",
+                        "name": "Angola",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c4",
+                        "name": "Lithuania",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c3",
+                        "name": "Zambia",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c2",
+                        "name": "Gabon",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c1",
+                        "name": "Slovakia",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920c0",
+                        "name": "El Salvador",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920bf",
+                        "name": "Tunisia",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920be",
+                        "name": "Ethiopia",
+                        "weight": 0
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c920bd",
+                        "name": "Trinidad & Tobago",
+                        "weight": 0
+                    }
+                ]
+            },
+            "detailedHoldings": {
+                "list": [
+                    {
+                        "_id": "5e42c26dad67003984c9211c",
+                        "name": "Cash and Cash Equivalents",
+                        "weight": 4.34
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c9211b",
+                        "name": "Ontario 3.450% 02-Jun-2045",
+                        "weight": 2.82
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c9211a",
+                        "name": "Ontario 3.500% 02-Jun-2043",
+                        "weight": 2.24
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92119",
+                        "name": "Ontario 2.900% 02-Jun-2049",
+                        "weight": 2.2
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92118",
+                        "name": "Ontario 2.900% 02-Dec-2046",
+                        "weight": 2.2
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92117",
+                        "name": "Ontario 2.600% 02-Jun-2027",
+                        "weight": 2.12
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92116",
+                        "name": "Ontario 2.600% 02-Jun-2025",
+                        "weight": 2.08
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92115",
+                        "name": "Ontario 4.600% 02-Jun-2039",
+                        "weight": 1.83
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92114",
+                        "name": "Ontario 4.650% 02-Jun-2041",
+                        "weight": 1.61
+                    },
+                    {
+                        "_id": "5e42c26dad67003984c92113",
+                        "name": "Ontario 2.400% 02-Jun-2026",
+                        "weight": 1.57
+                    }
+                ]
+            },
+            "size": 10000,
+            "sharedWith": [],
+            "isTemporary": false,
+            "_id": "5e42c26dad67003984c920b0",
+            "holdings": [
+                {
+                    "_id": "5e42c26dad67003984c920b2",
+                    "symbol": "RBF137",
+                    "name": "RBC Bond Sr O",
+                    "original": {
+                        "id": "5b2fd925b749806b7eddf8e7",
+                        "type": "fund"
+                    },
+                    "weight": 100,
+                    "dollars": 10000
+                }
+            ],
+            "performance": {
+                "percentGrowth": {
+                    "6M": 3.7803,
+                    "1Y": 8.4228,
+                    "3Y": 3.3299,
+                    "5Y": 4.4066,
+                    "10Y": 5.1088,
+                    "YT": 7.0157
+                },
+                "risk": {
+                    "correlation": [],
+                    "benchmarks": [
+                        {
+                            "names": {
+                                "full": "FTSE Canada WGBI TR",
+                                "short": "FTSE Canada WGBI TR"
+                            },
+                            "_id": "5ceffb66994fce08307078a6",
+                            "lipperId": 11000709
+                        },
+                        {
+                            "names": {
+                                "full": "FTSE CAD 3 Months Eurodeposit",
+                                "short": "FTSE CAD 3 Mths Eurodep"
+                            },
+                            "_id": "5ceffb66994fce08307078a4",
+                            "lipperId": 11000701
+                        }
+                    ],
+                    "standardDeviation": 3.69199727609043,
+                    "period": "3Y",
+                    "rSquared": 0.8469042444361509,
+                    "sharpeRatio": 0.1445368489912158,
+                    "maximumDrawdown": -3.304128876391457,
+                    "upside": 105.29123960812885,
+                    "downside": 76.00426314297012,
+                    "beta": 0.9296
+                },
+                "rolling": {
+                    "weekly": [],
+                    "monthly": []
+                },
+                "_id": "5e42c26dad67003984c920b1"
+            },
+            "createdBy": "5ce6c0414fc882109824a92c",
+            "name": "allo",
+            "mer": 0.03,
+            "mine": true,
+            "calculatedAt": "2020-02-11T15:04:13.790Z",
+            "createdAt": "2020-02-11T15:04:13.895Z",
+            "updatedAt": "2020-02-11T15:04:13.895Z",
+            "__v": 0
+        },
+        {
+            "allocations": {
+                "asset": [
+                    {
+                        "_id": "5e42c2f6ad67003984c9218a",
+                        "name": "Foreign Equity",
+                        "weight": 85.74
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92189",
+                        "name": "Cash & Equivalents",
+                        "weight": 6.68
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92188",
+                        "name": "United States Equity",
+                        "weight": 6.2
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92187",
+                        "name": "Canadian Equity",
+                        "weight": 1.38
+                    }
+                ],
+                "sector": [
+                    {
+                        "_id": "5e42c2f6ad67003984c92193",
+                        "name": "Industrials",
+                        "weight": 31.11
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92192",
+                        "name": "Technology",
+                        "weight": 22.54
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92191",
+                        "name": "Consumer Services",
+                        "weight": 18.67
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92190",
+                        "name": "Financials",
+                        "weight": 9.61
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9218f",
+                        "name": "Consumer Goods",
+                        "weight": 8.3
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9218e",
+                        "name": "Health Care",
+                        "weight": 1.45
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9218d",
+                        "name": "Basic Materials",
+                        "weight": 1.24
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9218c",
+                        "name": "Utilities",
+                        "weight": 0.39
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9218b",
+                        "name": "Unknown",
+                        "weight": 0
+                    }
+                ],
+                "country": [
+                    {
+                        "_id": "5e42c2f6ad67003984c921ab",
+                        "name": "United Kingdom",
+                        "weight": 19.01
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921aa",
+                        "name": "Sweden",
+                        "weight": 10.68
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a9",
+                        "name": "Germany",
+                        "weight": 10.39
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a8",
+                        "name": "Canada",
+                        "weight": 8.05
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a7",
+                        "name": "Switzerland",
+                        "weight": 7.49
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a6",
+                        "name": "Australia",
+                        "weight": 6.94
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a5",
+                        "name": "United States",
+                        "weight": 6.21
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a4",
+                        "name": "Japan",
+                        "weight": 5.94
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a3",
+                        "name": "Norway",
+                        "weight": 3.41
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a2",
+                        "name": "New Zealand",
+                        "weight": 3.12
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a1",
+                        "name": "Singapore",
+                        "weight": 3.02
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921a0",
+                        "name": "Korea",
+                        "weight": 2.87
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9219f",
+                        "name": "Taiwan",
+                        "weight": 2.2
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9219e",
+                        "name": "Italy",
+                        "weight": 1.51
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9219d",
+                        "name": "Finland",
+                        "weight": 1.28
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9219c",
+                        "name": "Netherlands",
+                        "weight": 1.27
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9219b",
+                        "name": "Faroe Islands",
+                        "weight": 1.14
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c9219a",
+                        "name": "Mexico",
+                        "weight": 1.08
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92199",
+                        "name": "Malaysia",
+                        "weight": 1.03
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92198",
+                        "name": "Chile",
+                        "weight": 0.91
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92197",
+                        "name": "United Arab Emirates",
+                        "weight": 0.79
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92196",
+                        "name": "India",
+                        "weight": 0.69
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92195",
+                        "name": "Hong Kong",
+                        "weight": 0.51
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c92194",
+                        "name": "France",
+                        "weight": 0.44
+                    }
+                ]
+            },
+            "detailedHoldings": {
+                "list": [
+                    {
+                        "_id": "5e42c2f6ad67003984c921b5",
+                        "name": "Softcat PLC ORD",
+                        "weight": 5.15
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921b4",
+                        "name": "Myob Group Ltd ORD",
+                        "weight": 3.69
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921b3",
+                        "name": "Bechtle AG ORD",
+                        "weight": 3.51
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921b2",
+                        "name": "Diploma PLC ORD",
+                        "weight": 3.49
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921b1",
+                        "name": "Bravida Holding AB ORD",
+                        "weight": 3.42
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921b0",
+                        "name": "Cembra Money Bank AG ORD",
+                        "weight": 3.12
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921af",
+                        "name": "Tsuruha Holdings Inc ORD",
+                        "weight": 2.5
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921ae",
+                        "name": "Fielmann AG ORD",
+                        "weight": 2.29
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921ad",
+                        "name": "Canada 0.000% 02-May-2019",
+                        "weight": 2.21
+                    },
+                    {
+                        "_id": "5e42c2f6ad67003984c921ac",
+                        "name": "XP Power Ltd ORD",
+                        "weight": 2.12
+                    }
+                ]
+            },
+            "size": 10000,
+            "sharedWith": [],
+            "isTemporary": false,
+            "_id": "5e42c2f6ad67003984c92182",
+            "holdings": [
+                {
+                    "_id": "5e42c2f6ad67003984c92184",
+                    "symbol": "MAW150",
+                    "name": "Mawer Global Small Cap Series A",
+                    "original": {
+                        "id": "5b2fda25b749806b7edeaf44",
+                        "type": "fund"
+                    },
+                    "weight": 100,
+                    "dollars": 10000
+                }
+            ],
+            "performance": {
+                "percentGrowth": {
+                    "6M": 3.9412,
+                    "1Y": 4.4478,
+                    "3Y": 9.3885,
+                    "5Y": 12.4446,
+                    "10Y": 15.9846,
+                    "YT": 14.3743
+                },
+                "risk": {
+                    "correlation": [],
+                    "benchmarks": [
+                        {
+                            "names": {
+                                "full": "MSCI AC World Small Cap TR CAD",
+                                "short": "MSCI AC World Small Cap TR CAD"
+                            },
+                            "_id": "5ceffbac994fce0830707b7a",
+                            "lipperId": 11056039
+                        },
+                        {
+                            "names": {
+                                "full": "FTSE CAD 3 Months Eurodeposit",
+                                "short": "FTSE CAD 3 Mths Eurodep"
+                            },
+                            "_id": "5ceffb66994fce08307078a4",
+                            "lipperId": 11000701
+                        }
+                    ],
+                    "standardDeviation": 9.294714660290168,
+                    "period": "3Y",
+                    "rSquared": 0.03297179906064671,
+                    "sharpeRatio": 0.16205360038412273,
+                    "maximumDrawdown": -16.521736437848013,
+                    "upside": 14.177579390941565,
+                    "downside": -30.441127868936192,
+                    "beta": 0.6689
+                },
+                "rolling": {
+                    "weekly": [],
+                    "monthly": []
+                },
+                "_id": "5e42c2f6ad67003984c92183"
+            },
+            "createdBy": "5ce6c0414fc882109824a92c",
+            "name": "allob",
+            "mer": 1.74,
+            "mine": true,
+            "calculatedAt": "2020-02-11T15:06:30.801Z",
+            "createdAt": "2020-02-11T15:06:30.890Z",
+            "updatedAt": "2020-02-11T15:06:30.890Z",
+            "__v": 0
+        }
+    ]
+}

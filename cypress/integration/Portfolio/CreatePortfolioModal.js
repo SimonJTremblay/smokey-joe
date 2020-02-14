@@ -4,7 +4,7 @@ const   f1 = 'RBF137',
         f2 = 'MAW150',
         modelName = 'create-portfolio-model'
 
-describe('create portfolio', function() {
+describe('create portfolio modal', function() {
 
     this.beforeEach(() => {
         cy.login()
