@@ -1,10 +1,13 @@
 /// <reference types="Cypress" />
 
+// For these tests to work:
+//      Template comparison: "test_2_comparison_cards" (content not important)
+//      Contact name "John Test"
+//      Contact 'John Test' to have comparison title "john_test_contact_comparison"
 
 describe(`Able to load a comparison from Templates and Contact tabs`, function() {
     const comparisonToGet = 'test_2_comparison_cards'
     const comparisonFromContact = 'john_test_contact_comparison'
-    // select John Test as contact
     const firstName = 'John', lastName = 'Test'
 
     this.beforeEach(() => {
@@ -14,12 +17,19 @@ describe(`Able to load a comparison from Templates and Contact tabs`, function()
     it(`load comparison from templates tab`, () => {
         cy.visit('/templates/comparisons')
 
-        cy.get('.rt-tbody').find('.rt-tr-group').eq(0).should('contain', comparisonToGet).find('.action-link').click()
+        //cy.get('.rt-tbody').find('.rt-tr-group').eq(0).should('contain', comparisonToGet).find('.action-link').click()
+        // Go through template list and find the comparison named 'test_2_comparison_cards'
+        cy.get('.rt-tbody').find('.rt-tr-group').each(($el, index, $list) => {
+            if(cy.wrap($el).should('contain',comparisonToGet)){
+                cy.wrap($el).click()
+            }
+        })
+        
+        //should('contain', comparisonToGet).find('.action-link').click()
 
-        cy.url().should('eq', Cypress.env('comparison'))
+        cy.url().should('eq', Cypress.env('comparison/performance'))
 
-        cy.get('.displayed-text').should('contain', comparisonToGet)
-        //cy.get('.rt-tbody').find('.rt-tr-group').eq(0).contains('Load Template')
+        cy.get('.displayed-value').should('contain', comparisonToGet)
     })
 
     it(`load comparison from contacts tab`, () => {
@@ -29,8 +39,10 @@ describe(`Able to load a comparison from Templates and Contact tabs`, function()
 
         //iterate over the array of contacts
         cy.get('.rt-tbody').find('.rt-tr-group').each(($el, index, $list) => {
-            const fname = $el.find('[data-cy=fname-contact]').text()            
-            const lname = $el.find('[data-cy=lname-contact]').text()
+            const fname = $el.find('.rt-tr-group > .rt-tr > :nth-child(3)').text()            
+            const lname = $el.find('.rt-tr-group > .rt-tr > :nth-child(4)').text()
+            
+            cy.log(fname)
             
             // if fname and lname match, I've found my test contact
             if(fname.includes(firstName) && lname.includes(lastName)){

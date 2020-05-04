@@ -104,7 +104,7 @@ describe('create portfolio modal', function() {
 
         cy.get('[data-cy=dropdown-menu-options]').eq(0).click()
 
-        cy.get('.modal-content h1').should('contain.html', '<span>Select a contact</span>')
+        cy.get('.modal-content h1').should('contain.html', 'Select a contact')
     })
 
     it(` 'Save as model' button brings should pop a toast saying it needs a title'`, () => {
@@ -131,9 +131,12 @@ describe('create portfolio modal', function() {
         // remove the newly created portfolio
         cy.get('.portfolio-card').each(($el, index, $list) => {
             const portfolioTitle = $el.find('.portfolio-name').text()
-
+            
             if(portfolioTitle === modelName){
                 cy.get('.icon-trash').click()
+
+                // delete modal should appear. Click Delete Portfolios
+                cy.get('.destructive').click()
             }
         })
     })

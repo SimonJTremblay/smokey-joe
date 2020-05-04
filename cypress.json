@@ -2,6 +2,7 @@
 	"baseUrl": "http://localhost:3000",
 	"env": {
 		"comparison": "http://localhost:3000/comparison",
+		"comparison/performance": "http://localhost:3000/comparison/performance",
 		"proposal": "http://localhost:3000/proposal"
 	},
 

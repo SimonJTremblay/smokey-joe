@@ -14,7 +14,9 @@
 // - Sur click du bouton 'Advanced Search', un modal apparait pour la recherche avancee
 
 describe('Comparison Tab quick search for funds/portfolios/stocks ', function() {
-    let searchWord = 'm'
+    const searchWord = 'ma', f1='MGS2322', f2 ='CIG90087', f3='ECF5035', f4 = 'MAW104';
+    const funds = [f1,f2,f3];
+
     this.beforeEach(() => {
         cy.login()
         cy.visit('/comparison')
@@ -25,13 +27,13 @@ describe('Comparison Tab quick search for funds/portfolios/stocks ', function() 
     //  	Je clique sur le premier de la liste
     //      il apparait comme comparison card 
     it('QuickSearch Tab is present and interactable', () => {
-        cy.get('[data-cy=quick-search-comparison-tab-search-input]')
+        cy.get('input')
         .click()
         .type(searchWord)
         .should('have.value', searchWord)
 
         cy.get('.quick-search-item').should('have.length.greaterThan', 0)   // should have at least one value
-        cy.get('#downshift-1-item-0') // first entry in the dropdownlist
+        cy.get('#downshift-2-item-0') // first entry in the dropdownlist
         .click()
 
         cy.get('.comparison-card')
@@ -39,42 +41,28 @@ describe('Comparison Tab quick search for funds/portfolios/stocks ', function() 
     })
 
     
-    it('Add 3 comparisons from quickSearch... should all be in the tab', () => {
-        let f1='MGS2322', f2 ='CIG90087', f3='ECF5035'
+    it('Add 3 comparisons from quickSearch... should all be in comparion-card', () => {
 
-        cy.get('[data-cy=quick-search-comparison-tab-search-input]')
-        .click()
-        .type(f1)
+        funds.forEach(element => {
+            cy.get('#downshift-2-input')
+            .click()
+            .type(element)
 
-        cy.get('#downshift-1-item-0') // first entry in the dropdownlist
-        .click()
-
-        cy.get('[data-cy=quick-search-comparison-tab-search-input]')
-        .click()
-        .type(f2)
-
-        cy.get('#downshift-1-item-0') // first entry in the dropdownlist
-        .click()
-
-        cy.get('[data-cy=quick-search-comparison-tab-search-input]')
-        .click()
-        .type(f3)
-
-        cy.get('#downshift-1-item-0') // first entry in the dropdownlist
-        .click()
+            cy.get('#downshift-2-item-0') // first entry in the dropdownlist
+            .click()
+        });
 
         cy.get('.comparison-card')
         .should('have.length', 3)
     })
 
-    it.only('Remove comparison-card from Comparison', () => {
-        let f1='MGS2322'
+    it('Remove one comparison from comparison-card', () => {
 
-        cy.get('[data-cy=quick-search-comparison-tab-search-input]')
+        cy.get('#downshift-2-input')
         .click()
-        .type(f1)
+        .type(f4)
 
-        cy.get('#downshift-1-item-0') // first entry in the dropdownlist
+        cy.get('#downshift-2-item-0') // first entry in the dropdownlist
         .click()
 
         cy.get('.comparison-card')

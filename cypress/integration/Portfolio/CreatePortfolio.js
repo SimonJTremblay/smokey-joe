@@ -12,7 +12,7 @@ describe('create portfolio', function() {
 
         cy.get('.section-title').should('contain.text', 'My Model Portfolios')
 
-        cy.get('[data-cy=quick-search-comparison-tab-search-input]').invoke('attr', 'placeholder').should('contain', 'Filter my models')
+        cy.get('[data-cy=quick-search-comparison-tab-search-input]').invoke('attr', 'placeholder').should('contain', 'Search my models')
     })
 
     it(` Clicking on 'Create Portfolio' opens an empty portfolio modal`, () => {
